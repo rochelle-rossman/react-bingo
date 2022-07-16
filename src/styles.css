@@ -1,0 +1,68 @@
+body {
+  background: #4b4a67;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.letter-wrapper,
+.wrapper {
+  width: 600px;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(5, 100px);
+  margin: 0 auto;
+}
+
+.wrapper {
+  grid-template-rows: repeat(5, 100px);
+  grid-auto-flow: column;
+}
+
+.letter {
+  font-weight: bold;
+  font-size: 50px;
+  color: white;
+}
+
+.tile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #3f4045;
+  color: #9fa1a8;
+
+  padding: 10px;
+  min-height: 40px;
+  font-weight: bold;
+  font-size: 20px;
+
+  border: 4px white dashed;
+  border-radius: 10px;
+
+  cursor: pointer;
+}
+
+.tile--set {
+  background: #1be7ff;
+  color: black;
+  border: 4px #6eeb83 dashed;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  overflow-y: hidden;
+  overflow-x: hidden;
+
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+
+  pointer-events: none;
+}
